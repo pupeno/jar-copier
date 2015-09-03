@@ -23,6 +23,16 @@ You need to configure the plug-in in your `project.clj` like this:
 `:java-agents` instruct this plug in to automatically copy any jars that are specified as Java agents. `:destination`
 specifies where to copy them to.
 
+For example, from [proclodo-spa-server-rendering](https://github.com/ldnclj/proclodo-spa-server-rendering):
+
+    (defproject proclodo-spa-server-rendering "0.1.0-SNAPSHOT"
+      :dependencies [[org.clojure/clojure "1.7.0"]]
+      :plugins [[jar-copier "0.1.0"]]
+      :prep-tasks ["javac" "compile" "jar-copier"]
+      :java-agents [[com.newrelic.agent.java/newrelic-agent "3.20.0"]]
+      :jar-copier {:java-agents true
+                   :destination "resources/jars"})
+
 ## TODO
 
 This plug in only copies jars specified as java agents but there's potential for more. See:
