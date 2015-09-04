@@ -44,6 +44,17 @@ For example, from [proclodo-spa-server-rendering](https://github.com/ldnclj/proc
 This plug in only copies jars specified as java agents but there's potential for more. See:
 https://github.com/carouselapps/jar-copier/issues/1
 
+## Change log
+
+### v0.2.0 - 2015-09-04
+- Changed the groupId to com.carouselapps
+- Added a test
+- Added travis ci
+- Improved documentation
+
+### v0.1.0 - 2015-09-03
+- Initial release supporting copying java-agents.
+
 ## License
 
 Copyright © 2015 Carousel Apps, Ltd. All rights reserved.
