@@ -1,7 +1,7 @@
 # jar-copier
 
-A Leiningen plugin to copy a jar from your dependencies into your resources. This is necesarry in the case of Java
-agents for example, which have to be present as jars outside the uberjar.
+[jar-copier](https://carouselapps.com/jar-copier/) is a Leiningen plugin to copy a jar from your dependencies into your
+resources. This is necessary in the case of Java agents for example, which have to be present as jars outside the uberjar.
 
 ## Usage
 
@@ -33,7 +33,7 @@ For example, from [proclodo-spa-server-rendering](https://github.com/ldnclj/proc
       :jar-copier {:java-agents true
                    :destination "resources/jars"})
 
-## TODO
+## To Do
 
 This plug in only copies jars specified as java agents but there's potential for more. See:
 https://github.com/carouselapps/jar-copier/issues/1
