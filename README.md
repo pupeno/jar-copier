@@ -9,7 +9,7 @@ resources. This is necessary in the case of Java agents for example, which have 
 
 In your `project.clj`, in the `:plugins` section, add:
 
-[![Clojars Project](http://clojars.org/jar-copier/latest-version.svg)](http://clojars.org/jar-copier)
+[![Clojars Project](http://clojars.org/com.carouselapps/jar-copier/latest-version.svg)](http://clojars.org/com.carouselapps/jar-copier)
 
 To run this plug in, execute:
 
