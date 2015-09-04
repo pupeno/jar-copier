@@ -1,6 +1,6 @@
 ;;;; Copyright © 2015 Carousel Apps, Ltd. All rights reserved.
 
-(defproject com.carouselapps/jar-copier "0.1.0"
+(defproject com.carouselapps/jar-copier "0.2.0-SNAPSHOT"
   :description "Copy a jar from your dependencies into your resources."
   :url "https://carouselapps.com/jar-copier/"
   :license {:name "Eclipse Public License"
