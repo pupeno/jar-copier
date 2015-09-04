@@ -5,7 +5,11 @@ resources. This is necessary in the case of Java agents for example, which have 
 
 ## Usage
 
-Put `[jar-copier "0.1.0"]` into the `:plugins` vector on your `project.clj`. To run this plug in, execute:
+In your `project.clj`, in the `:plugins` section, add:
+
+[![Clojars Project](http://clojars.org/jar-copier/latest-version.svg)](http://clojars.org/jar-copier)
+
+To run this plug in, execute:
 
     $ lein jar-copier
 
