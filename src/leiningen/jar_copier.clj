@@ -19,10 +19,9 @@
   [project & args]
   (if (misses? project :jar-copier)
     (lein/warn "jar-copier is not configured.")
-    (do
-      (if (misses? (:jar-copier project) :destination)
-        (lein/warn "jar-copier is missing the destination configuration")
-        (if (and (get-in project [:jar-copier :java-agents])
-                 (misses? project :java-agents))
-          (lein/warn "jar-copier requested to copy java agents, but no java agents were present.")
-          (copy-java-agents (:java-agents project) (get-in project [:jar-copier :destination])))))))
+    (if (misses? (:jar-copier project) :destination)
+      (lein/warn "jar-copier is missing the destination configuration")
+      (if (and (get-in project [:jar-copier :java-agents])
+               (misses? project :java-agents))
+        (lein/warn "jar-copier requested to copy java agents, but no java agents were present.")
+        (copy-java-agents (:java-agents project) (get-in project [:jar-copier :destination]))))))
