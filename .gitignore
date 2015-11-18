@@ -10,4 +10,4 @@ pom.xml.asc
 .hgignore
 .hg/
 .idea
-jar_copier.iml
+jar-copier.iml
