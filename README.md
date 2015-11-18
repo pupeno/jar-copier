@@ -21,9 +21,8 @@ If you want the task to run automatically, which is recommended, add:
 
     :prep-tasks ["javac" "compile" "jar-copier"]
 
-and it'll be invoked every time you build your uberjar.
-
-The essential plug-in configuration goes into your `project.clj` and looks like this:
+and it'll be invoked every time you build your uberjar. The essential plug-in configuration goes into your `project.clj`
+and looks like this:
 
     :jar-copier {:destination "resources/jars"}
 
@@ -37,7 +36,9 @@ or, if you have `:java-agents` in your project, there's a shortcut to just copy 
     :jar-copier {:java-agents true
                  :destination "resources/jars"}
 
-They can both be mixed. For example, from
+They can both be mixed if desired.
+
+A full example using Java agents can be found in
 [proclodo-spa-server-rendering](https://github.com/ldnclj/proclodo-spa-server-rendering):
 
     (defproject proclodo-spa-server-rendering "0.1.0-SNAPSHOT"
