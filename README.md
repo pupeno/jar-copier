@@ -52,7 +52,8 @@ A full example using Java agents can be found in
 ## Change log
 
 ### v0.3.0 - 2015-11-18
-- Added tests for misconfiguration.
+- Better reporting of misconfiguration.
+- Thoroughly testing misconfiguration reporting.
 - Added the possibility to manually specify the jars (not java-agents).
 
 ### v0.2.0 - 2015-09-04
