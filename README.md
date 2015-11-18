@@ -50,7 +50,7 @@ They can both be mixed. For example, from
 
 ## Change log
 
-### v0.3.0
+### v0.3.0 - 2015-11-18
 - Added tests for misconfiguration.
 - Added the possibility to manually specify the jars (not java-agents).
 
