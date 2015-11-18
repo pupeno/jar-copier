@@ -23,15 +23,22 @@ If you want the task to run automatically, which is recommended, add:
 
 and it'll be invoked every time you build your uberjar.
 
-You need to configure the plug-in in your `project.clj` like this:
+The essential plug-in configuration goes into your `project.clj` and looks like this:
+
+    :jar-copier {:destination "resources/jars"}
+
+`:destination` specifies where to copy the jars. You can then specify the jars you want to copy in this fashion:
+
+    :jar-copier {:jars        '[[org.clojure/clojure "1.7.0"]]
+                 :destination "resources/jars"}
+
+or, if you have `:java-agents` in your project, there's a shortcut to just copy them:
 
     :jar-copier {:java-agents true
                  :destination "resources/jars"}
 
-`:java-agents` instruct this plug in to automatically copy any jars that are specified as Java agents. `:destination`
-specifies where to copy them to.
-
-For example, from [proclodo-spa-server-rendering](https://github.com/ldnclj/proclodo-spa-server-rendering):
+They can both be mixed. For example, from
+[proclodo-spa-server-rendering](https://github.com/ldnclj/proclodo-spa-server-rendering):
 
     (defproject proclodo-spa-server-rendering "0.1.0-SNAPSHOT"
       :dependencies [[org.clojure/clojure "1.7.0"]]
@@ -41,12 +48,11 @@ For example, from [proclodo-spa-server-rendering](https://github.com/ldnclj/proc
       :jar-copier {:java-agents true
                    :destination "resources/jars"})
 
-## To Do
-
-This plug in only copies jars specified as java agents but there's potential for more. See:
-https://github.com/carouselapps/jar-copier/issues/1
-
 ## Change log
+
+### v0.3.0
+- Added tests for misconfiguration.
+- Added the possibility to manually specify the jars (not java-agents).
 
 ### v0.2.0 - 2015-09-04
 - Changed the groupId to com.carouselapps
