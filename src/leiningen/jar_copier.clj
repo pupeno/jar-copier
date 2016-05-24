@@ -9,7 +9,7 @@
   (doseq [[jar-file full-destination] (map list
                                            (aether/dependency-files (aether/resolve-dependencies :coordinates jars))
                                            (map #(io/file destination (str (first %) ".jar")) jars))]
-    (lein/info "Coping" (.getPath jar-file) "to" (.getPath full-destination))
+    (lein/info "Copying" (.getPath jar-file) "to" (.getPath full-destination))
     (io/make-parents full-destination)
     (io/copy jar-file full-destination)))
 
