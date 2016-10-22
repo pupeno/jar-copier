@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/carouselapps/jar-copier](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/carouselapps/jar-copier?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Build Status](https://travis-ci.org/carouselapps/jar-copier.svg?branch=master)](https://travis-ci.org/carouselapps/jar-copier)
+[![Build Status](https://travis-ci.org/pupeno/jar-copier.svg?branch=master)](https://travis-ci.org/carouselapps/jar-copier)
 
 [jar-copier](https://carouselapps.com/jar-copier/) is a Leiningen plugin to copy a jar from your dependencies into your
 resources. This is necessary in the case of Java agents for example, which have to be present as jars outside the uberjar.
