@@ -1,5 +1,7 @@
 # jar-copier
 
+[![Code at GitHub](https://img.shields.io/badge/code-github-green.svg)](https://github.com/pupeno/jar-copier)
+[![Clojars](https://img.shields.io/clojars/v/com.pupeno/jar-copier.svg)](https://clojars.org/com.pupeno/jar-copier)
 [![Build Status](https://travis-ci.org/pupeno/jar-copier.svg?branch=master)](https://travis-ci.org/pupeno/jar-copier)
 
 [jar-copier](https://github.com/pupeno/jar-copier) is a Leiningen plugin to copy a jar from your dependencies into your
