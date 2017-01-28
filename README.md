@@ -51,6 +51,9 @@ A full example using Java agents can be found in
 
 ## Change log
 
+### v0.3.1 - 2017-01-28
+- Changed metadata to point to the new group for this library.
+
 ### v0.3.0 - 2015-11-18
 - Better reporting of misconfiguration.
 - Thoroughly testing misconfiguration reporting.
