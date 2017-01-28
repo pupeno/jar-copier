@@ -1,17 +1,15 @@
 # jar-copier
 
-[![Join the chat at https://gitter.im/carouselapps/jar-copier](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/carouselapps/jar-copier?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/pupeno/jar-copier.svg?branch=master)](https://travis-ci.org/pupeno/jar-copier)
 
-[![Build Status](https://travis-ci.org/pupeno/jar-copier.svg?branch=master)](https://travis-ci.org/carouselapps/jar-copier)
-
-[jar-copier](https://carouselapps.com/jar-copier/) is a Leiningen plugin to copy a jar from your dependencies into your
+[jar-copier](https://github.com/pupeno/jar-copier) is a Leiningen plugin to copy a jar from your dependencies into your
 resources. This is necessary in the case of Java agents for example, which have to be present as jars outside the uberjar.
 
 ## Usage
 
 In your `project.clj`, in the `:plugins` section, add:
 
-[![Clojars Project](http://clojars.org/com.carouselapps/jar-copier/latest-version.svg)](http://clojars.org/com.carouselapps/jar-copier)
+[![Clojars Project](http://clojars.org/com.pupeno/jar-copier/latest-version.svg)](http://clojars.org/com.pupeno/jar-copier)
 
 To run this plug in, execute:
 
@@ -51,6 +49,10 @@ A full example using Java agents can be found in
 
 ## Change log
 
+### v0.4.0 - 2017-01-28
+- Changed the groupId to com.pupeno.
+- Fixed typo: https://github.com/pupeno/jar-copier/pull/4
+
 ### v0.3.1 - 2017-01-28
 - Changed metadata to point to the new group for this library.
 
@@ -70,6 +72,6 @@ A full example using Java agents can be found in
 
 ## License
 
-Copyright © 2015 Carousel Apps, Ltd. All rights reserved.
+Copyright © 2015-2017 José Pablo Fernández Silva
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.

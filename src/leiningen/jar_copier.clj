@@ -1,4 +1,4 @@
-;;;; Copyright © 2015 Carousel Apps, Ltd. All rights reserved.
+;;;; Copyright © 2015-2017 José Pablo Fernández Silva
 
 (ns leiningen.jar-copier
   (:require [leiningen.core.main :as lein]
