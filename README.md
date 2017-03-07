@@ -28,7 +28,7 @@ and looks like this:
 
 `:destination` specifies where to copy the jars. You can then specify the jars you want to copy in this fashion:
 
-    :jar-copier {:jars        '[[org.clojure/clojure "1.7.0"]]
+    :jar-copier {:jars        [[org.clojure/clojure "1.7.0"]]
                  :destination "resources/jars"}
 
 or, if you have `:java-agents` in your project, there's a shortcut to just copy them:
